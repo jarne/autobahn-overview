@@ -1,0 +1,9 @@
+<p>Here's an overview about German highways:</p>
+<div class="road-list">
+    <a
+        *ngFor="let roadName of highwayNetwork?.roads"
+        class="btn btn-primary m-1"
+        routerLink="/highway/{{ roadName }}"
+        >{{ roadName }}</a
+    >
+</div>

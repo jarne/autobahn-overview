@@ -1,0 +1,10 @@
+<p>
+    Current highway: <b>{{ highwayId }}</b>
+</p>
+
+<h3>Available parking lorries</h3>
+<ul>
+    <li *ngFor="let parking of highwayDetails?.parking_lorry">
+        {{ parking.title }} - {{ parking.subtitle }}
+    </li>
+</ul>
